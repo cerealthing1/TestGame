@@ -9,6 +9,12 @@ workspace "TestGame"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "TestGame/vendor/GLFW/include"
+IncludeDir["Glad"] = "TestGame/vendor/Glad/include"
+include "TestGame/vendor/GLFW"
+include "TestGame/vendor/Glad"
+
 project "TestGame"
     location "TestGame"
     kind "ConsoleApp"
@@ -23,14 +29,27 @@ project "TestGame"
         "%{prj.name}/src/**.cpp"
     }
 
+    includedirs
+    {
+        "%{IncludeDir.GLFW}",
+         "%{IncludeDir.Glad}"
+    }
+
+    links
+	{
+		"GLFW",
+        "GLAD",
+		"opengl32.lib"
+	}
+
     filter {"system:windows", "configurations:Debug"}
-        cppdialect "C++14"
+        cppdialect "Default"
         staticruntime "On"
         systemversion "latest"
         defines "ISDEBUG"
         symbols "On"
 
-    filter {"system:windows", "configurations:Debug"}
+    filter {"system:windows", "configurations:Release"}
     cppdialect "Default"
     staticruntime "On"
     systemversion "latest"
