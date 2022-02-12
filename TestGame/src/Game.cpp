@@ -15,6 +15,7 @@ Game::~Game()
 
 void Game::Init()
 {
+	
 }
 
 void Game::Update()

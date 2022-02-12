@@ -53,6 +53,7 @@ void Window::Init()
 
 	glfwMakeContextCurrent(m_Window);
 	glfwSetWindowSizeCallback(m_Window, WindowResize);
+	glfwSwapBuffers(m_Window);
 
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{

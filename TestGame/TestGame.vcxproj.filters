@@ -39,7 +39,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Game.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="src\OpenGL\BufferUtils\Buffer.h">
+      <Filter>src\OpenGL\BufferUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenGL\BufferUtils\CheckGLErrors.h">
       <Filter>src\OpenGL\BufferUtils</Filter>
     </ClInclude>
     <ClInclude Include="src\OpenGL\BufferUtils\IndexBuffer.h">
@@ -49,9 +55,6 @@
       <Filter>src\OpenGL\BufferUtils</Filter>
     </ClInclude>
     <ClInclude Include="src\OpenGL\Entity2D.h">
-      <Filter>src\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Game.h">
       <Filter>src\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\OpenGL\Renderer.h">
@@ -1314,20 +1317,22 @@
     <ClInclude Include="vendor\stb\stb_image.hpp">
       <Filter>vendor\stb</Filter>
     </ClInclude>
-    <ClInclude Include="src\OpenGL\BufferUtils\CheckGLErrors.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="src\Main.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenGL\BufferUtils\CheckGLErrors.cpp">
+      <Filter>src\OpenGL\BufferUtils</Filter>
     </ClCompile>
     <ClCompile Include="src\OpenGL\BufferUtils\IndexBuffer.cpp">
       <Filter>src\OpenGL\BufferUtils</Filter>
     </ClCompile>
     <ClCompile Include="src\OpenGL\BufferUtils\VertexArray.cpp">
       <Filter>src\OpenGL\BufferUtils</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Game.cpp">
-      <Filter>src\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\OpenGL\Renderer.cpp">
       <Filter>src\OpenGL</Filter>
@@ -1344,6 +1349,5 @@
     <ClCompile Include="vendor\stb\stb_image.cpp">
       <Filter>vendor\stb</Filter>
     </ClCompile>
-    <ClCompile Include="src\OpenGL\BufferUtils\CheckGLErrors.cpp" />
   </ItemGroup>
 </Project>

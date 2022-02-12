@@ -92,12 +92,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\OpenGL\BufferUtils\Buffer.h" />
     <ClInclude Include="src\OpenGL\BufferUtils\CheckGLErrors.h" />
     <ClInclude Include="src\OpenGL\BufferUtils\IndexBuffer.h" />
     <ClInclude Include="src\OpenGL\BufferUtils\VertexArray.h" />
     <ClInclude Include="src\OpenGL\Entity2D.h" />
-    <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\OpenGL\Renderer.h" />
     <ClInclude Include="src\OpenGL\Utils\Shader.h" />
     <ClInclude Include="src\OpenGL\Utils\Texture.h" />
@@ -520,11 +520,11 @@
     <ClInclude Include="vendor\stb\stb_image.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\OpenGL\BufferUtils\CheckGLErrors.cpp" />
     <ClCompile Include="src\OpenGL\BufferUtils\IndexBuffer.cpp" />
     <ClCompile Include="src\OpenGL\BufferUtils\VertexArray.cpp" />
-    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\OpenGL\Renderer.cpp" />
     <ClCompile Include="src\OpenGL\Utils\Shader.cpp" />
     <ClCompile Include="src\OpenGL\Utils\Texture.cpp" />
