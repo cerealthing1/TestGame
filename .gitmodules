@@ -1,9 +1,6 @@
 [submodule "TestGame/vendor/glm"]
 	path = TestGame/vendor/glm
 	url = https://github.com/g-truc/glm.git
-[submodule "TestGame/vendor/glfw"]
-	path = TestGame/vendor/glfw
-	url = https://github.com/glfw/glfw.git
 [submodule "TestGame/vendor/GLFW"]
 	path = TestGame/vendor/GLFW
 	url = https://github.com/cerealthing1/glfw.git
